@@ -1,6 +1,8 @@
 # kinship
 # Español
+
 Código correspondiente a las simulaciones utilizadas para el manuscrito "SIMULATING THE EFFECTS OF KINSHIP AND POSTMARITAL RESIDENCE PATTERNS ON MITOCHONDRIAL DNA DIVERSITY IN MORTUARY CONTEXTS" (AJPA-2023-00149). Simulan el comportamiento de variantes de ADN mitocondrial en poblaciones humanas en contextos mortuorios, obedeciendo a distintas normas de parentesco.
+
 Todos los scripts deben guardarse en la misma carpeta, y los parámetros de las simulaciones se establecen a partir del script "simulacion madre". Se pueden cambiar cuatro parámetros:
 FERTILIDAD: distribución normal de nacidos vivos, alta (tfr=1) o baja (tfr=2)
 MORTALIDAD JUVENIL: distribución normal de mortalidad prerreproductiva, alta (cm=1) o baja (cm=2)
