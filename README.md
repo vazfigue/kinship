@@ -78,3 +78,5 @@ divf (1 to 6): haplotype diversity of the female individuals of the group at the
 divt (1 to 6): total haplotype diversity of the group at the end of the generation.
 
 In the "samples" folders are the estimated diversities for samples of 10, 20, 30 and 50 individuals at the end of each run for the estimation of their usefulness in archaeological contexts.
+
+Comments in the scripts are in Spanish. My apologies for not translating them; I believe online translating engines are good enough by now.
