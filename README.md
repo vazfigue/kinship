@@ -43,7 +43,7 @@ En las carpetas "samples" se encuentran las diversidades estimadas para muestras
 
 Code corresponding to the simulations used for the manuscript "SIMULATING THE EFFECTS OF KINSHIP AND POSTMARITAL RESIDENCE PATTERNS ON MITOCHONDRIAL DNA DIVERSITY IN MORTUARY CONTEXTS" (DOI: 10.1002/ajpa.24910). They simulate the behavior of mitochondrial DNA variants in human populations within mortuary contexts, following different kinship rules.
 
-All scripts must be saved in the same folder, and the parameters of the simulations are set from the "mother simulation" script. Four parameters can be changed:
+All scripts must be saved in the same folder, and the parameters of the simulations are set from the script in the "simulacion madre" file. Four parameters can be changed:
 
 FERTILITY: normal distribution of live births, high (tfr=1) or low (tfr=2).
 
