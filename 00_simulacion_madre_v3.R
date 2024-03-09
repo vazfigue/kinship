@@ -368,67 +368,6 @@ names(resamples[[j]])<-c("run","gen","mr","ad","divM1_10","divM2_10","divM3_10",
                          "divT1_50","divT2_50","divT3_50","divT4_50","divT5_50","divT6_50","divT50_mean")
 } # cierre del loop j
 
-### ACA VAN LOS CALCULOS DE DISTANCIA de siempre con la generacion 15
-### No se analizan en el paper pero pueden ser de utilidad
-
-# # Matrices (transitorias) de frecuencias
-# 
-# frecsmasc<-matrix(NA,48,6)
-# frecsfem<-matrix(NA,48,6)
-# frecstodo<-matrix(NA,48,6)
-# 
-# for(j in 1:4)
-# {
-# 	for (i in 1:6)
-# 	{
-# 		for(k in 1:48)
-# 		{
-# 		frecsmasc[k,i]<-length(subset(piladehuesos[[j]][[15]][[i]]$varon,
-# 			piladehuesos[[j]][[15]][[i]]$varon==haplostodos[k]))/length(piladehuesos[[j]][[15]][[i]]$varon)
-# 		frecsfem[k,i]<-length(subset(piladehuesos[[j]][[15]][[i]]$mujer,
-# 			piladehuesos[[j]][[15]][[i]]$mujer==haplostodos[k]))/length(piladehuesos[[j]][[15]][[i]]$mujer)
-# 		frecstodo[k,i]<-length(subset(unlist(piladehuesos[[j]][[15]][[i]]),
-# 			unlist(piladehuesos[[j]][[15]][[i]])==haplostodos[k]))/length(unlist(piladehuesos[[j]][[15]][[i]]))
-# 		} #cierre loop k
-# 	} #cierre loop i
-# 
-# #	Y ahora la matriz de distancias con el calculo casero diseñado en 2006
-# 	distaneimasc<-matrix(data = NA, nrow = 6, ncol = 6, byrow = FALSE)
-# 	distaneifem<-matrix(data = NA, nrow = 6, ncol = 6, byrow = FALSE)
-# 	distaneitodo<-matrix(data = NA, nrow = 6, ncol = 6, byrow = FALSE)
-#   
-# 	for(i in 1:6)
-# 	{
-# 		for(k in 1:6)
-# 	    {
-# 		# entre pobs de varones
-# 		danei<-1-sum(sqrt(frecsmasc[,i]*frecsmasc[,k]))
-# 		distaneimasc[i,k]<-danei
-# 		distaneimasc[k,i]<-danei
-# 		# entre pobs de mujeres
-# 		danei<-1-sum(sqrt(frecsfem[,i]*frecsfem[,k]))
-# 		distaneifem[i,k]<-danei
-# 		distaneifem[k,i]<-danei
-#      	#entre pobs pooleadas
-# 		danei<-1-sum(sqrt(frecstodo[,i]*frecstodo[,k]))
-# 		distaneitodo[i,k]<-danei
-# 		distaneitodo[k,i]<-danei
-# 		} #cierre loop k
-# 	} #cierre loop i
-# 
-# # Pasaje de las matrices a objetos dist para facilitar los calculos
-# # (los objetos dist toman solo un triangulo y omiten la diagonal)
-# distaneimasc<-as.dist(distaneimasc)
-# distaneifem<-as.dist(distaneifem)
-# distaneitodo<-as.dist(distaneitodo)
-# 
-# # Guardado de las matrices "estiradas" como filas en distances
-# distances[[j]][[1]]<-rbind(distances[[j]][[1]], c(distaneimasc))
-# distances[[j]][[2]]<-rbind(distances[[j]][[2]], c(distaneifem))
-# distances[[j]][[3]]<-rbind(distances[[j]][[3]], c(distaneitodo))
-
-#} #cierre loop j
-
 # Suspension del sistema por 0,01s
   Sys.sleep(0.01)
   
